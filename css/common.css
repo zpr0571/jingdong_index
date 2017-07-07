@@ -1,0 +1,245 @@
+/*浏览器样式重置*/
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style-type:none; 
+}
+/*通用样式*/
+body{
+	font:12px microsoft yahei,Arial;
+}
+a{
+	color: #666;
+	text-decoration: none;
+}
+a:hover{
+	color: #ff0700;
+	text-decoration: underline;
+}
+
+/*header>#top_box*/
+header{
+	/*避免浏览器宽度过小时出现没有底色的情况*/
+	min-width: 1211px;
+	background-color: #F7F7F7;
+}
+#top_box{
+	height: 30px;	
+}
+#top_box,article{
+	width: 1211px;
+	margin: 0 auto;
+}
+
+/*顶部收藏京东*/
+#top_box>a{
+	line-height: 30px;
+}
+/*顶部右侧菜单*/
+/*rt向右浮动*/
+.rt{
+	float: right;
+}
+ul.rt>li{
+	float:left;
+}
+ul.rt>li>a{
+	/*右侧超链接垂直居中*/
+	line-height: 30px;
+}
+ul.rt>li>b{
+	/*列表中分割线*/
+	border-left: 1px solid #DDD;
+	margin: 0 5px;
+}
+/*超链接背景图*/
+a.vip{
+	background: url(../images/vip.jpg) no-repeat left center;
+	padding-left: 26px;
+}
+a.dakehu{
+	background: url(../images/dakehu.jpg) no-repeat left center;
+	padding-left: 26px;
+}
+a.app_jd{
+	display: inline-block;
+	background: url(../images/iconlist_2.png) no-repeat -128px -356px;
+	padding-left: 18px;
+}
+a.app_jd:hover{
+	background-position: -128px -396px;
+}
+/*服务中心*/
+a.service{
+	background: url(../images/jt_down.jpg) no-repeat 90% center;
+	padding-right: 10px;
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	text-align: center;
+	/*使用box-sizing解决*/
+	/*box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;*/
+}
+a.service:hover{
+	width: 78px;
+	height: 28px;
+	line-height: 28px;
+	border:1px solid #DDD;
+	background: white url(../images/jt_up.jpg) no-repeat 90% center;
+	position: relative;
+	z-index: 1;
+	border-bottom:none; 
+}
+/*服务列表*/
+.service_li{
+	position: relative;
+}
+.service_items{
+	position: absolute;
+	top:28px;
+	left: 11px;
+	width: 88px;
+	border:1px solid #DDD;
+	box-shadow:0 0 10px #DDD;
+}
+.service_items>li{
+	padding:8px 10px 8px 0;
+	text-align: center;
+}
+
+/**************搜索框开始***************/
+/*搜索框中元素布局*/
+#top_main{
+	height: 90px;
+}
+#top_main>a,#search_box,#btn_box{
+	float: left;
+}
+#top_main>a{
+	margin-top: 20px;
+}
+#search_box{
+	margin-top: 15px;
+	margin-left: 45px;
+}
+#btn_box{
+	margin-top: 25px;
+	margin-left: 50px;
+}
+/*搜索框样式*/
+#search_box>div.search{
+	width: 510px;
+	height: 37px;
+	padding:3px 0 0 3px;
+	background-color: #E4393C;
+}
+#txt_search{
+	border:none;
+	height: 34px;
+	width: 420px;
+	/*移除轮廓*/	
+	outline:0;
+}
+#btn_search{
+	border:none;
+	background-color: #E4393C;
+	cursor:pointer;
+	height: 32px;
+	width: 84px;
+	color: white;
+	font: bold 14px \5b8b\4f53;
+}
+.hot_words{
+	padding-top: 4px;
+}
+.hot_words,.hot_words>a{
+	color: #999;
+}
+.hot_words>a{
+	padding-left: 4px;
+}
+/*我的京东和购物车按钮*/
+.lt{
+	float: left;
+}
+.btn{
+	height: 30px;
+	border: 1px solid #EEE;
+	background-color: #F7F7F7;
+	/*居中*/
+	text-align: center;
+	line-height: 30px;
+	padding: 0 8px 0 30px;
+	/*手型*/
+	cursor:pointer;
+}
+.btn:hover{
+	background-color: #FFF;
+}
+.btn>b{
+	font-size: 0;	
+	border:6px solid transparent;
+	border-top: 6px solid #CCC;
+	margin-left: 3px;
+}
+#my_jd{
+	background:#F7F7F7 url(../images/iconlist_2.png) no-repeat -116px -24px;
+	margin-right: 10px;
+}
+#my_jd:hover{
+	background:url(../images/iconlist_2.png) no-repeat -116px -54px;
+}
+#cart{
+	background:#F7F7F7 url(../images/iconlist_2.png) no-repeat -116px -83px;
+}
+#cart:hover{
+	background:url(../images/iconlist_2.png) no-repeat -116px -114px;
+}
+/**************搜索框结束**************/
+
+
+/**************导航栏开始**************/
+nav{
+	background-color: #E64346;
+	line-height: 40px;
+	height: 40px;
+}
+#category{
+	width: 210px;
+	height: 40px;
+	float: left;
+	background-color: #CD2A2C;
+}
+#category>a{
+	color: white;
+	font:bold 14px 微软雅黑;
+	margin-left: 15px;	
+}
+/*导航菜单*/
+#nav_items{
+	float: left;
+}
+#nav_items>li{
+	float: left;
+}
+#nav_items>li>a{
+	display: inline-block;
+	width: 80px;
+	height: 40px;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	line-height: 40px;
+}
+#nav_items>li>a:hover{
+	background-color: #BD2A2C;	
+	text-decoration: none;
+}
+/**************导航栏结束*************
