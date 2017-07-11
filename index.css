@@ -60,13 +60,13 @@ div.sub_cate_box {
 	border-right:none;
 }
 #slider_box .ad span a {
-	background-image:url(Images/index/ad-arraw.png);
+	background-image:url(images/index/ad-arraw.png);
 	background-repeat:no-repeat;
 	width:25px;
 	height:35px;
 }
 #slider_box .ad span a:hover {
-	background-image:url(Images/index/ad-arraw-hover.png);
+	background-image:url(images/index/ad-arraw-hover.png);
 }
 #slider_box .preview a, #slider_box .preview a:hover {
 	float:left;
@@ -333,7 +333,7 @@ div.floor>header>span {
 	width:26px;
 	height:28px;
 	float:left;
-	background:url(Images/index/index_iconlist_01.png) no-repeat 0px 2px;
+	background:url(images/index/index_iconlist_01.png) no-repeat 0px 2px;
 	font-size:18px;
 	color:#fff;
 	font-weight:bold;
